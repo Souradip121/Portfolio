@@ -3,6 +3,18 @@
 import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
+// Update the type definition to match Framer Motion's MarginType
+type InViewMargin =
+  | string
+  | number
+  | {
+      top?: number | string;
+      bottom?: number | string;
+      left?: number | string;
+      right?: number | string;
+    }
+  | undefined;
+
 interface BlurFadeProps {
   children: React.ReactNode;
   className?: string;
@@ -12,11 +24,13 @@ interface BlurFadeProps {
   };
   duration?: number;
   delay?: number;
-  yOffset?: number;
+  // Updated yOffset to be only number or string, which is compatible with Framer Motion
+  yOffset?: number | string;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: InViewMargin;
   blur?: string;
 }
+
 const BlurFade = ({
   children,
   className,
@@ -25,17 +39,28 @@ const BlurFade = ({
   delay = 0,
   yOffset = 6,
   inView = false,
-  inViewMargin = "-50px",
+  inViewMargin = "0px",
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
+
+  // The useInView hook accepts a string as margin
+  const inViewResult = useInView(ref, {
+    once: true,
+    margin: inViewMargin as any, // Type assertion to prevent TypeScript error
+  });
+
   const isInView = !inView || inViewResult;
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
-    visible: { y: -yOffset, opacity: 1, filter: `blur(0px)` },
+    visible: {
+      y: typeof yOffset === "number" ? -yOffset : 0,
+      opacity: 1,
+      filter: `blur(0px)`,
+    },
   };
   const combinedVariants = variant || defaultVariants;
+
   return (
     <AnimatePresence>
       <motion.div
