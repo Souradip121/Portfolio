@@ -1,0 +1,51 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy container app to Azure Web App - souradip
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: 'ubuntu-latest'
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Log in to registry
+      uses: docker/login-action@v2
+      with:
+        registry: https://souradip.azurecr.io/
+        username: ${{ secrets.AzureAppService_ContainerUsername_63bd32c0a23e4994b6ef7c88117e170f }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_ce4d04cf342744deb35e9dcec2ede7cb }}
+
+    - name: Build and push container image to registry
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: souradip.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_63bd32c0a23e4994b6ef7c88117e170f }}/app:${{ github.sha }}
+        file: ./Dockerfile
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+    - name: Deploy to Azure Web App
+      id: deploy-to-webapp
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'souradip'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d64d2dc524844e90bf46d2862ad4c2d0 }}
+        images: 'souradip.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_63bd32c0a23e4994b6ef7c88117e170f }}/app:${{ github.sha }}'
