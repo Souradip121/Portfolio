@@ -30,15 +30,15 @@ export default function Page() {
               <div className="max-w-[600px] md:text-xl">
                 <div className="flex flex-wrap items-center gap-x-1">
                   <span>Learning about</span>
-                  <FlipWords 
-                    words={DATA.interestAreas} 
+                  <FlipWords
+                    words={DATA.interestAreas}
                     className="text-foreground font-medium"
                   />
                 </div>
                 <div className="flex flex-wrap items-center gap-x-1">
                   <span>loves to</span>
-                  <FlipWords 
-                    words={DATA.activities} 
+                  <FlipWords
+                    words={DATA.activities}
                     className="text-foreground font-medium"
                   />
                 </div>
