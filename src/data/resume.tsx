@@ -4,13 +4,13 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Souradip Pal",
   initials: "SP",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
+  url: "https://souradip.me",
+  location: "Kolkata, West Bengal",
   locationLink: "https://www.google.com/maps/place/india",
   description:
-    "Learning about Artificial Intelligence, loves to write blogs, and build and explore stuffs",
+    "Learning about Artificial Intelligence, loves to write blogs, build and explore stuffs",
   summary:
-    "Started my tech journey in the year of 2022, participated in my first ever hackathon, attended lots of seminars along the way, jump back to today, I have participated over 10+ hackathons, won Smart India Hackathon and going to do internship at ISRO. I have built a community [devdotcom.in](devdotcom.in), running free DSA classes at 11pm, hosting podcasts, mentoring learners and learning along the way!",
+    "Started my tech journey in the year of 2022, participated in my first ever hackathon, attended lots of seminars along the way, jump back to today, I have participated over 5+ hackathons, won Smart India Hackathon and is doing internship at ISRO. I have built a community [devdotcom.in](devdotcom.in), running free DSA classes at 11pm, hosting podcasts, mentoring learners and learning along the way!",
   avatarUrl: "/me.png",
   skills: [
     "Python",
@@ -20,7 +20,50 @@ export const DATA = {
     "Flask",
     "Fastapi",
     "Azure",
-    "C++",
+  ],
+  certifications: [
+    {
+      name: "DataCamp Associate Data Scientist",
+      issuer: "DataCamp",
+      issueDate: "2024",
+      url: "https://www.datacamp.com/certificate/DSA0012033562292",
+      logo: "/datacamp.png", // Add this to your public folder
+    },
+    {
+      name: "AWS Certified AI Practitioner",
+      issuer: "Amazon Web Services",
+      issueDate: "2024",
+      url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/7716c92952c04d75910e44fb76d8f3f1",
+      logo: "/aws.svg", // Add this to your public folder
+    },
+    {
+      name: "Github Foundations Certified",
+      issuer: "GitHub",
+      issueDate: "2024",
+      url: "https://www.credly.com/badges/d7ea0b13-eb0b-4022-9bfd-809d3badb9b8/linked_in_profile",
+      logo: "/github.png", // Add this to your public folder
+    },
+    {
+      name: "Career Essentials in Generative AI",
+      issuer: "Microsoft and LinkedIn",
+      issueDate: "2023",
+      url: "https://www.linkedin.com/learning/certificates/0049eee5b712fc49b88cc172e51afdea8e77e554f07f649569d32fb82012fdf3",
+      logo: "/microsoft.png", // Add this to your public folder
+    },
+    {
+      name: "Supervised Machine Learning: Regression and Classification",
+      issuer: "Coursera",
+      issueDate: "2023",
+      url: "https://www.coursera.org/account/accomplishments/verify/YYJH982PZFJX",
+      logo: "/coursera.png", // Add this to your public folder
+    },
+    {
+      name: "Intro to Machine Learning",
+      issuer: "Kaggle",
+      issueDate: "2023",
+      url: "https://www.kaggle.com/learn/certification/souradippal/intro-to-machine-learning",
+      logo: "/kaggle.png", // Add this to your public folder
+    },
   ],
   navbar: [],
   contact: {
@@ -320,7 +363,7 @@ export const DATA = {
       location: "In-person",
       description:
         "Developed yourmind.space - an AI journal where users can track their daily life by conversing with an AI agent, maintain journal entries, search queries, and visualize emotional mood through graphs.",
-      image: "", // Add appropriate image path
+      image: "/diversion2k25.avif",
       links: [],
     },
     {
@@ -329,7 +372,7 @@ export const DATA = {
       location: "In-person",
       description:
         "Developed Vistaar - an interface where scientists can manipulate and visualize INSAT satellite imagery data. Secured third place in the competition.",
-      image: "", // Add appropriate image path
+      image: "/smartindiahackathon.webp",
       win: "3rd Place",
       links: [],
     },
@@ -339,7 +382,7 @@ export const DATA = {
       location: "In-person",
       description:
         "Created Urocare AI - a RAG-based chatbot enabling users to query about sensitive urology-related topics confidentially.",
-      image: "", // Add appropriate image path
+      image: "/diversion2k24.webp", // Using the same logo since it's the same hackathon series
       links: [],
     },
     {
@@ -348,7 +391,7 @@ export const DATA = {
       location: "In-person",
       description:
         "Developed QR Kids AI - a Streamlit webapp that generates artistic QR codes containing children's information that can be attached to their bags. Won the Streamlit track for innovative use of the platform.",
-      image: "", // Add appropriate image path
+      image: "status code 0.webp",
       win: "Streamlit Track Winner",
       links: [],
     },
@@ -358,7 +401,7 @@ export const DATA = {
       location: "In-person",
       description:
         "Built a Python Voice Assistant - a simple yet functional voice-controlled assistant for basic tasks.",
-      image: "", // Add appropriate image path
+      image: "/diversion2k23.webp",
       links: [],
     },
     {
@@ -367,7 +410,7 @@ export const DATA = {
       location: "In-person",
       description:
         "Developed an OCR-based optical character recognition system. Secured third place in the competition.",
-      image: "", // Add appropriate image path
+      image: "/kgechackfest.jpg",
       win: "3rd Place",
       links: [],
     },

@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import Image from "next/image";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -32,7 +33,11 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage
+                  alt={DATA.name}
+                  src={DATA.avatarUrl}
+                  className="object-cover"
+                />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -77,7 +82,7 @@ export default function Page() {
       <section id="volunteering">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Volunteering Experience</h2>
+            <h2 className="text-xl font-bold">Community Experience</h2>
           </BlurFade>
           {DATA.volunteering.map((volunteer, id) => (
             <BlurFade
@@ -136,6 +141,53 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* Improved Certifications section with equal column widths */}
+      <section id="certifications">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 10.5}>
+            <h2 className="text-xl font-bold">Certifications</h2>
+          </BlurFade>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-[800px] mx-auto">
+            {DATA.certifications.map((cert, id) => (
+              <BlurFade
+                key={cert.name}
+                delay={BLUR_FADE_DELAY * 11 + id * 0.05}
+                className="w-full"
+              >
+                <Link
+                  href={cert.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full h-full"
+                >
+                  <div className="flex items-center p-4 rounded-md border hover:bg-secondary/50 transition-colors h-full">
+                    {cert.logo && (
+                      <div className="flex-shrink-0 mr-4">
+                        <div className="h-14 w-14 relative">
+                          <Image
+                            src={cert.logo}
+                            alt={cert.issuer}
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                      </div>
+                    )}
+                    <div>
+                      <h3 className="font-medium">{cert.name}</h3>
+                      <p className="text-sm text-muted-foreground">
+                        {cert.issuer} • {cert.issueDate}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -186,13 +238,13 @@ export default function Page() {
                   Hackathons
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                  I love building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
+                  From the starting year of 2k23, I attended{" "}
+                  {DATA.hackathons.length - 1}+ hackathons. People from around
+                  the country would come together and build incredible things in
+                  2-3 days. It was eye-opening to see the endless possibilities
                   brought to life by a group of motivated and passionate
                   individuals.
                 </p>
@@ -236,7 +288,14 @@ export default function Page() {
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  with a direct question on Twitter
+                </Link>{" "}
+                or connect with me on{" "}
+                <Link
+                  href={DATA.contact.social.LinkedIn.url}
+                  className="text-blue-500 hover:underline"
+                >
+                  LinkedIn
                 </Link>{" "}
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.
