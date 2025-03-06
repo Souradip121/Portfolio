@@ -23,8 +23,8 @@ export const DATA = {
     "C++",
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+
+   
   ],
   contact: {
     email: "souradip.pal.ai@gmail.com",
@@ -49,6 +49,12 @@ export const DATA = {
         url: "https://x.com/souradip3000",
         icon: Icons.x,
 
+        navbar: true,
+      },
+      Medium: {
+        name: "Medium",
+        url: "https://medium.com/@souradip1000",
+        icon: Icons.medium,
         navbar: true,
       },
       Youtube: {
@@ -131,6 +137,33 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Vistaar - ISRO Satellite Data Platform",
+      href: "https://www.youtube.com/watch?v=Pb2luuu58G4",
+      dates: "November - December 2024",
+      active: true,
+      description:
+        'Built a cloud-based, end-to-end solution for manipulating INSAT satellite data, tailored for meteorologists and scientists at ISRO. Contributed to the data processing pipeline by projecting Level 1 INSAT-3DR data and converting it into cloud-optimized GeoTIFF formats. Implemented download functionality and API playground to stream data directly into notebooks. Won Smart India Hackathon 2024 for Problem Statement SIH1738: "Innovative applications of cloud-optimized GeoTIFFs for INSAT satellite data." Received guidance directly from ISRO scientists and had the opportunity to meet Nilesh M. Desai, Director of SAC ISRO.',
+      technologies: [
+        "Python",
+        "GeoTIFF",
+        "Cloud-Optimized Formats",
+        "Data Processing",
+        "Geospatial Analysis",
+        "Satellite Imagery",
+        "API Development",
+        "Web Development",
+      ],
+      links: [
+        {
+          type: "Demo",
+          href: "https://www.youtube.com/watch?v=Pb2luuu58G4",
+          icon: <Icons.youtube className="size-3" />,
+        },
+      ],
+      image: "/vistaar.png",
+      video: "",
+    },
+    {
       title: "Rice Classification with PyTorch",
       href: "https://pub.towardsai.net/classifying-rice-with-pytorch-a-step-by-step-guide-df59f5e37d71?sk=dae962ac5d5a59048b2cfb48db3ffc40",
       dates: "November 2024",
@@ -164,6 +197,36 @@ export const DATA = {
       video: "",
     },
     {
+      title: "yourmind.space - AI-Powered Journaling Assistant",
+      href: "https://www.youtube.com/watch?v=LpaTHg5re_s",
+      dates: "2025",
+      active: true,
+      description:
+        "Developed an AI-powered personal journaling assistant using the Conversational Realtime GPT API to address the challenges of traditional journaling. The platform facilitates voice-based journaling, analyzes emotions, tracks habits, and generates data-driven insights on personal well-being. Created an intuitive interface for users to maintain consistency in documenting their thoughts while providing quantifiable insights into mood and behavioral patterns over time.",
+      technologies: [
+        "Typescript",
+        "GPT API",
+        "Voice Recognition",
+        "Sentiment Analysis",
+        "Data Visualization",
+        "User Experience Design",
+      ],
+      links: [
+        {
+          type: "Demo",
+          href: "https://www.youtube.com/watch?v=LpaTHg5re_s",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/yourmindspace/diversion_proto",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/image.png",
+      video: "",
+    },
+    {
       title: "Chicken Disease Classification with MLOps",
       href: "https://github.com/Souradip121/Chicken-Disease-Classification",
       dates: "2023",
@@ -190,134 +253,12 @@ export const DATA = {
       image: "/projectchicken.png",
       video: "",
     },
-    {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
-      active: true,
-      description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    },
   ],
   hackathons: [
     {
       title: "Diversion 2k25",
       dates: "February 2025",
-      location: "Remote",
+      location: "In-person",
       description:
         "Developed yourmind.space - an AI journal where users can track their daily life by conversing with an AI agent, maintain journal entries, search queries, and visualize emotional mood through graphs.",
       image: "", // Add appropriate image path
@@ -326,7 +267,7 @@ export const DATA = {
     {
       title: "Smart India Hackathon 2k24",
       dates: "January 2024",
-      location: "India",
+      location: "In-person",
       description:
         "Developed Vistaar - an interface where scientists can manipulate and visualize INSAT satellite imagery data. Secured third place in the competition.",
       image: "", // Add appropriate image path
@@ -336,7 +277,7 @@ export const DATA = {
     {
       title: "Diversion 2k24",
       dates: "February 2024",
-      location: "Remote",
+      location: "In-person",
       description:
         "Created Urocare AI - a RAG-based chatbot enabling users to query about sensitive urology-related topics confidentially.",
       image: "", // Add appropriate image path
@@ -345,7 +286,7 @@ export const DATA = {
     {
       title: "Status Code 0",
       dates: "2023",
-      location: "Remote",
+      location: "In-person",
       description:
         "Developed QR Kids AI - a Streamlit webapp that generates artistic QR codes containing children's information that can be attached to their bags. Won the Streamlit track for innovative use of the platform.",
       image: "", // Add appropriate image path
@@ -355,7 +296,7 @@ export const DATA = {
     {
       title: "DIVERSION 2k23",
       dates: "February 2023",
-      location: "Remote",
+      location: "In-person",
       description:
         "Built a Python Voice Assistant - a simple yet functional voice-controlled assistant for basic tasks.",
       image: "", // Add appropriate image path
@@ -364,7 +305,7 @@ export const DATA = {
     {
       title: "KGEC HACKFEST",
       dates: "2023",
-      location: "Remote",
+      location: "In-person",
       description:
         "Developed an OCR-based optical character recognition system. Secured third place in the competition.",
       image: "", // Add appropriate image path
