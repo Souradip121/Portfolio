@@ -22,10 +22,7 @@ export const DATA = {
     "Azure",
     "C++",
   ],
-  navbar: [
-
-   
-  ],
+  navbar: [],
   contact: {
     email: "souradip.pal.ai@gmail.com",
     tel: "+91 9002562424",
@@ -251,6 +248,68 @@ export const DATA = {
         },
       ],
       image: "/projectchicken.png",
+      video: "",
+    },
+    {
+      title: "AI Chess Girl with Ollama & Phi 3",
+      href: "https://medium.com/@souradip1000/building-an-ai-chess-girl-with-ollama-phi-3-slm-model-no-api-key-no-gpu-required-4f22d5f4d35e",
+      dates: "October 2024",
+      active: true,
+      description:
+        "Developed a local AI chatbot with a custom personality - a chess-loving little girl named Emily. Built using Ollama's Phi 3 model that runs locally without requiring an API key or GPU. Implemented speech-to-text and text-to-speech capabilities for natural conversation flow. Created a comprehensive tutorial explaining how to set up Ollama, customize AI personalities, and build voice-interactive chatbots with Python.",
+      technologies: [
+        "Python",
+        "Ollama",
+        "Phi-3 Model",
+        "Speech Recognition",
+        "Text-to-Speech",
+        "AI Chatbot",
+        "Local LLM",
+      ],
+      links: [
+        {
+          type: "Article",
+          href: "https://medium.com/@souradip1000/building-an-ai-chess-girl-with-ollama-phi-3-slm-model-no-api-key-no-gpu-required-4f22d5f4d35e",
+          icon: <Icons.medium className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Souradip121/AI-Chess-Girl",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/ollama.png",
+      video: "",
+    },
+    {
+      title: "QR Kids AI - Child Safety QR Code Generator",
+      href: "https://www.youtube.com/watch?v=Gn3cnCRQqzs",
+      dates: "2023",
+      active: true,
+      description:
+        "Created a web application that helps parents generate artistic QR codes containing their child's information that can be attached to their bags or clothing. When scanned, these QR codes provide the child's contact details to help reunite lost children with their families. Used generative AI to create visually appealing QR codes that blend into designs while remaining scannable. Implemented with Streamlit for the frontend UI and Azure Blob Storage for hosting generated PDF files containing child information. The project was published in the International Journal of Intelligent Systems and Applications in Engineering.",
+      technologies: [
+        "Python",
+        "Streamlit",
+        "Azure Blob Storage",
+        "QR Code Monster V2 Model",
+        "Generative AI",
+        "PDF Generation",
+        "Cloud Storage",
+      ],
+      links: [
+        {
+          type: "Demo",
+          href: "https://www.youtube.com/watch?v=Gn3cnCRQqzs",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "Paper",
+          href: "https://ijisae.org/index.php/IJISAE/article/view/6759",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/qrai.png",
       video: "",
     },
   ],
