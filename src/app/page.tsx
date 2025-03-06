@@ -5,6 +5,7 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { FlipWords } from "@/components/ui/flip-words";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -25,11 +26,24 @@ export default function Page() {
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
-              <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
+              {/* Replace static description with dynamic FlipWords */}
+              <div className="max-w-[600px] md:text-xl">
+                <div className="flex flex-wrap items-center gap-x-1">
+                  <span>Learning about</span>
+                  <FlipWords 
+                    words={DATA.interestAreas} 
+                    className="text-foreground font-medium"
+                  />
+                </div>
+                <div className="flex flex-wrap items-center gap-x-1">
+                  <span>loves to</span>
+                  <FlipWords 
+                    words={DATA.activities} 
+                    className="text-foreground font-medium"
+                  />
+                </div>
+                <div>and build stuffs</div>
+              </div>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">

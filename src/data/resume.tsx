@@ -7,6 +7,11 @@ export const DATA = {
   url: "https://souradip.me",
   location: "Kolkata, West Bengal",
   locationLink: "https://www.google.com/maps/place/india",
+  
+  // Adding arrays for FlipWords content
+  interestAreas: ["Artificial Intelligence", "Machine Learning", "Deep Learning"],
+  activities: ["write blogs", "host events", "host meetups"],
+  
   description:
     "Learning about Artificial Intelligence, loves to write blogs, build and explore stuffs",
   summary:
