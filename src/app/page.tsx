@@ -27,23 +27,25 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
               {/* Replace static description with dynamic FlipWords */}
-              <div className="max-w-[600px] md:text-xl">
-                <div className="flex flex-wrap items-center gap-x-1">
-                  <span>Learning about</span>
-                  <FlipWords
-                    words={DATA.interestAreas}
-                    className="text-foreground font-medium"
-                  />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <div className="max-w-[600px] md:text-xl">
+                  <div className="flex flex-wrap items-center gap-x-1">
+                    <span>Learning about</span>
+                    <FlipWords
+                      words={DATA.interestAreas}
+                      className="text-foreground font-medium"
+                    />
+                  </div>
+                  <div className="flex flex-wrap items-center gap-x-1">
+                    <span>loves to</span>
+                    <FlipWords
+                      words={DATA.activities}
+                      className="text-foreground font-medium"
+                    />
+                  </div>
+                  <div>and build stuffs</div>
                 </div>
-                <div className="flex flex-wrap items-center gap-x-1">
-                  <span>loves to</span>
-                  <FlipWords
-                    words={DATA.activities}
-                    className="text-foreground font-medium"
-                  />
-                </div>
-                <div>and build stuffs</div>
-              </div>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
