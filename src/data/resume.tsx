@@ -55,7 +55,7 @@ export const DATA = {
     {
       name: "Career Essentials in Generative AI",
       issuer: "Microsoft and LinkedIn",
-      issueDate: "2023",
+      issueDate: "2024",
       url: "https://www.linkedin.com/learning/certificates/0049eee5b712fc49b88cc172e51afdea8e77e554f07f649569d32fb82012fdf3",
       logo: "/microsoft.png", // Add this to your public folder
     },
@@ -130,7 +130,7 @@ export const DATA = {
       location: "Ahmedabad, India",
       title: "Research Intern",
       logoUrl: "/isro.png", // Make sure to add ISRO logo to public folder
-      start: "Feb 2024",
+      start: "Feb 2025",
       end: "Present",
       description:
         "Working with satellite data processing and integration of Machine Learning models into the platform. Developed Flask APIs for model deployment and data processing pipeline for efficient handling of satellite imagery data. Contributed to the enhancement of data processing capabilities for satellite imagery analysis.",
@@ -156,7 +156,7 @@ export const DATA = {
       location: "Remote",
       title: "Advocate & Mentor",
       logoUrl: "/hack_quest1708933084951.png",
-      start: "Jan 2024",
+      start: "Jan 2025",
       end: "Present",
       description:
         "Mentoring students in hackathons, conducting technical workshops, and helping them build innovative projects.",
@@ -168,7 +168,7 @@ export const DATA = {
       location: "Remote",
       title: "Beta Student Ambassador",
       logoUrl: "/mlsa.png",
-      start: "Dec 2023",
+      start: "Jan 2024",
       end: "Present",
       description:
         "Conducting workshops on Microsoft Azure, helping students learn cloud computing, and organizing technical events.",
@@ -416,7 +416,7 @@ export const DATA = {
     {
       title: "KGEC HACKFEST",
       dates: "2023",
-      location: "In-person",
+      location: "Remote",
       description:
         "Developed an OCR-based optical character recognition system. Secured third place in the competition.",
       image: "/kgechackfest.jpg",
