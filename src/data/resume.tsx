@@ -129,130 +129,190 @@ export const DATA = {
       end: "Present",
     },
   ],
-  // projects: [
-  //   {
-  //     title: "Chat Collect",
-  //     href: "https://chatcollect.com",
-  //     dates: "Jan 2024 - Feb 2024",
-  //     active: true,
-  //     description:
-  //       "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-  //     technologies: [
-  //       "Next.js",
-  //       "Typescript",
-  //       "PostgreSQL",
-  //       "Prisma",
-  //       "TailwindCSS",
-  //       "Stripe",
-  //       "Shadcn UI",
-  //       "Magic UI",
-  //     ],
-  //     links: [
-  //       {
-  //         type: "Website",
-  //         href: "https://chatcollect.com",
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //     ],
-  //     image: "",
-  //     video:
-  //       "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-  //   },
-  //   {
-  //     title: "Magic UI",
-  //     href: "https://magicui.design",
-  //     dates: "June 2023 - Present",
-  //     active: true,
-  //     description:
-  //       "Designed, developed and sold animated UI components for developers.",
-  //     technologies: [
-  //       "Next.js",
-  //       "Typescript",
-  //       "PostgreSQL",
-  //       "Prisma",
-  //       "TailwindCSS",
-  //       "Stripe",
-  //       "Shadcn UI",
-  //       "Magic UI",
-  //     ],
-  //     links: [
-  //       {
-  //         type: "Website",
-  //         href: "https://magicui.design",
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //       {
-  //         type: "Source",
-  //         href: "https://github.com/magicuidesign/magicui",
-  //         icon: <Icons.github className="size-3" />,
-  //       },
-  //     ],
-  //     image: "",
-  //     video: "https://cdn.magicui.design/bento-grid.mp4",
-  //   },
-  //   {
-  //     title: "llm.report",
-  //     href: "https://llm.report",
-  //     dates: "April 2023 - September 2023",
-  //     active: true,
-  //     description:
-  //       "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-  //     technologies: [
-  //       "Next.js",
-  //       "Typescript",
-  //       "PostgreSQL",
-  //       "Prisma",
-  //       "TailwindCSS",
-  //       "Shadcn UI",
-  //       "Magic UI",
-  //       "Stripe",
-  //       "Cloudflare Workers",
-  //     ],
-  //     links: [
-  //       {
-  //         type: "Website",
-  //         href: "https://llm.report",
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //       {
-  //         type: "Source",
-  //         href: "https://github.com/dillionverma/llm.report",
-  //         icon: <Icons.github className="size-3" />,
-  //       },
-  //     ],
-  //     image: "",
-  //     video: "https://cdn.llm.report/openai-demo.mp4",
-  //   },
-  //   {
-  //     title: "Automatic Chat",
-  //     href: "https://automatic.chat",
-  //     dates: "April 2023 - March 2024",
-  //     active: true,
-  //     description:
-  //       "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-  //     technologies: [
-  //       "Next.js",
-  //       "Typescript",
-  //       "PostgreSQL",
-  //       "Prisma",
-  //       "TailwindCSS",
-  //       "Shadcn UI",
-  //       "Magic UI",
-  //       "Stripe",
-  //       "Cloudflare Workers",
-  //     ],
-  //     links: [
-  //       {
-  //         type: "Website",
-  //         href: "https://automatic.chat",
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //     ],
-  //     image: "",
-  //     video:
-  //       "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-  //   },
-  // ],
+  projects: [
+    {
+      title: "Rice Classification with PyTorch",
+      href: "https://pub.towardsai.net/classifying-rice-with-pytorch-a-step-by-step-guide-df59f5e37d71?sk=dae962ac5d5a59048b2cfb48db3ffc40",
+      dates: "November 2024",
+      active: true,
+      description:
+        "Built a Convolutional Neural Network (CNN) using PyTorch to classify different rice varieties based on images. The model was trained on a dataset of rice images split into training, validation, and test sets. Implemented data preprocessing, model training, and evaluation workflows with visualization of training metrics. Published a detailed tutorial on Towards AI explaining the step-by-step process of building and training the model.",
+      technologies: [
+        "Python",
+        "PyTorch",
+        "CNN",
+        "Deep Learning",
+        "Image Classification",
+        "Data Visualization",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+      ],
+      links: [
+        {
+          type: "Article",
+          href: "https://pub.towardsai.net/classifying-rice-with-pytorch-a-step-by-step-guide-df59f5e37d71?sk=dae962ac5d5a59048b2cfb48db3ffc40",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Souradip121/Rice-classifier-CNN",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/rice.png",
+      video: "",
+    },
+    {
+      title: "Chicken Disease Classification with MLOps",
+      href: "https://github.com/Souradip121/Chicken-Disease-Classification",
+      dates: "2023",
+      active: true,
+      description:
+        "This project addresses a real-world challenge by implementing a binary classification model to determine whether a chicken is healthy or suffering from Coccidiosis based on fecal images. Developed a deep learning model using VGG16 CNN with transfer learning. Implemented Data Version Control (DVC) for managing datasets, models, and experiment tracking. Deployed the application on Azure Container Registry and hosted it via containerized infrastructure.",
+      technologies: [
+        "Python",
+        "Deep Learning",
+        "TensorFlow",
+        "Azure",
+        "DVC",
+        "MLOps",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Souradip121/Chicken-Disease-Classification",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projectchicken.png",
+      video: "",
+    },
+    {
+      title: "Chat Collect",
+      href: "https://chatcollect.com",
+      dates: "Jan 2024 - Feb 2024",
+      active: true,
+      description:
+        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Stripe",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+    },
+    {
+      title: "Magic UI",
+      href: "https://magicui.design",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "Designed, developed and sold animated UI components for developers.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Stripe",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://magicui.design",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/magicuidesign/magicui",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
+    },
+    {
+      title: "llm.report",
+      href: "https://llm.report",
+      dates: "April 2023 - September 2023",
+      active: true,
+      description:
+        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Magic UI",
+        "Stripe",
+        "Cloudflare Workers",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://llm.report",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/dillionverma/llm.report",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.llm.report/openai-demo.mp4",
+    },
+    {
+      title: "Automatic Chat",
+      href: "https://automatic.chat",
+      dates: "April 2023 - March 2024",
+      active: true,
+      description:
+        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Magic UI",
+        "Stripe",
+        "Cloudflare Workers",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://automatic.chat",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+    },
+  ],
   hackathons: [
     {
       title: "Diversion 2k25",
