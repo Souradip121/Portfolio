@@ -1,0 +1,272 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.5pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape SOURADIP PAL} \\ \vspace{1pt}
+    
+    \small \raisebox{-0.1\height}\faPhone\ +91 9002562424  ~ \href{mailto:souradip.pal.ai@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{souradip.pal.ai@gmail.com}} ~ 
+    \href{https://linkedin.com/in/souradip-pal-codes}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/souradip-pal-codes}}  ~
+    \href{https://github.com/Souradip121}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Souradip121}}
+    \vspace{-8pt}
+\end{center}
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Python, SQL, C++} \\
+    \textbf{Machine Learning}{: Supervised \& Unsupervised Learning, Deep Learning (CNNs, RNNs, Transformers), Reinforcement Learning, Generative AI (GPT, BERT, Stable Diffusion), Retrieval-Augmented Generation (RAG), Prompt Engineering, Feature Engineering} \\
+    \textbf{Frameworks \& Libraries}{: TensorFlow, PyTorch, Scikit-learn, Hugging Face Transformers, OpenCV, XGBoost, LightGBM, LangChain, Stable Diffusion} \\
+    \textbf{Data Engineering}{: ETL Pipelines, PySpark, Azure, AWS, GCP, Data Processing} \\
+    \textbf{Backend Development}{: FastAPI, Flask, Django, RESTful APIs} \\
+    \textbf{MLOps}{: Docker, Kubernetes, MLflow, Data Versioning (DVC)} \\
+    \textbf{Data Visualization}{: Tableau, Power BI, Matplotlib, Seaborn, Plotly, Streamlit} \\
+    }}
+\end{itemize}
+
+
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {SAC ISRO}{Feb 2025 -- Present}
+    {Research Intern}{Ahmedabad, India}
+    \resumeItemListStart
+        \resumeItem{Engineered satellite data processing solutions, accelerating image analysis by 35\% through optimized ML model integration}
+        \resumeItem{Architected RESTful Flask APIs serving 200+ daily requests for model deployment and constructed a data processing pipeline handling 5TB+ of satellite imagery}
+        \resumeItem{Spearheaded enhancement of data processing capabilities, reducing inference time by 40\% for real-time satellite imagery analysis}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Linux Foundation Energy - Hyphae APIs}{Mar 2025 -- Present}
+    {LFX Mentee}{Remote}
+    \resumeItemListStart
+        \resumeItem{Contributing to open-source development of Hyphae APIs, an LF Energy project focused on standardizing building automation systems}
+        \resumeItem{Implementing API endpoints and data models for energy management systems with focus on interoperability and scalability}
+        \resumeItem{Collaborating with global team of developers to create solutions for sustainability-focused energy optimization in smart buildings}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+    {\textbf{Vistaar - ISRO Satellite Data Platform} $|$ \emph{Python, GeoTIFF, Cloud Computing}}{Nov 2024 -- Dec 2024}
+    \resumeItemListStart
+        \resumeItem{Constructed a cloud-based solution for manipulating INSAT satellite data, processing 500+ GBs of Level 1 INSAT-3DR data into cloud-optimized GeoTIFF formats with 99.2\% accuracy}
+        \resumeItem{Designed download functionality and API playground achieving 3x faster data streaming directly into notebooks compared to previous methods}
+        \resumeItem{Secured 1st place among 120+ teams at Smart India Hackathon 2024 for the "Innovative applications of cloud-optimized GeoTIFFs for INSAT satellite data" challenge}
+    \resumeItemListEnd
+    \vspace{-13pt}
+
+\resumeProjectHeading
+    {\textbf{Rice Classification with PyTorch} $|$ \emph{Deep Learning, CNN, Image Classification}}{Nov 2024 -- Dec 2024}
+    \resumeItemListStart
+        \resumeItem{Formulated a Convolutional Neural Network using PyTorch achieving 93.7\% accuracy in classifying 5 different rice varieties from 2,500+ images}
+        \resumeItem{Orchestrated comprehensive data preprocessing, model training, and evaluation workflows, reducing training time by 27\% through batch optimization}
+        \resumeItem{Authored a detailed tutorial on Towards AI garnering 12,000+ views and 150+ positive comments on the model building process}
+    \resumeItemListEnd
+    \vspace{-13pt}
+
+\resumeProjectHeading
+    {\textbf{yourmind.space - AI-Powered Journaling Assistant} $|$ \emph{GPT API, Voice Recognition, Sentiment Analysis}}{Feb 2025 -- Mar 2025}
+    \resumeItemListStart
+        \resumeItem{Crafted an AI-powered personal journaling assistant using Conversational Realtime GPT API, processing 1,000+ user interactions daily}
+        \resumeItem{Established a voice-based journaling platform with 92\% emotion detection accuracy, tracking 15+ habit categories and generating data-driven insights}
+        \resumeItem{Devised an intuitive interface that improved user retention by 45\% and increased journaling consistency by 63\% while providing quantifiable insights}
+    \resumeItemListEnd
+    \vspace{-13pt}
+
+\resumeProjectHeading
+    {\textbf{Chicken Disease Classification with MLOps} $|$ \emph{Deep Learning, TensorFlow, DVC, Docker}}{Mar 2023 -- Jun 2023}
+    \resumeItemListStart
+        \resumeItem{Pioneered a binary classification model using VGG16 CNN with transfer learning, achieving 95.8\% accuracy in detecting Coccidiosis from 1,500+ fecal images}
+        \resumeItem{Integrated Data Version Control (DVC) for managing 10GB+ datasets, reducing model iteration time by 40\% through efficient experiment tracking}
+        \resumeItem{Executed deployment on Azure Container Registry with containerized infrastructure, establishing CI/CD using GitHub Actions with 99.7\% uptime}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------VOLUNTEERING-----------
+\section{Volunteering \& Community Work}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {DevDotCom}{May 2023 -- Present}
+    {Community Founder}{Remote}
+    \resumeItemListStart
+        \resumeItem{Launched and scaled a tech community from 0 to 600+ active members across 15 countries within 18 months}
+        \resumeItem{Coordinated 25+ free DSA classes with 85\% attendance rate, produced 40+ educational podcasts (15,000+ plays), and mentored 50+ students}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Microsoft Learn}{Jan 2024 -- Present}
+    {Beta Student Ambassador}{Remote}
+    \resumeItemListStart
+        \resumeItem{Facilitated 12 workshops on Microsoft Azure for 300+ students, with 75\% reporting improved understanding of cloud computing concepts}
+        \resumeItem{Organized 8 technical events averaging 50+ attendees per session and increased Microsoft technology adoption by 35\% among participating students}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+    \small{
+    \begin{itemize}[leftmargin=0.15in, label=\textbullet]
+        \item \textbf{DataCamp Associate Data Scientist} $|$ \emph{DataCamp, Apr 2024}
+        \item \textbf{AWS Certified AI Practitioner} $|$ \emph{Amazon Web Services, Jun 2024}
+        \item \textbf{Github Foundations Certified} $|$ \emph{GitHub, Mar 2024}
+        \item \textbf{Career Essentials in Generative AI} $|$ \emph{Microsoft and LinkedIn, Feb 2024}
+        \item \textbf{Supervised Machine Learning: Regression and Classification} $|$ \emph{Coursera, Sep 2023}
+        \item \textbf{Intro to Machine Learning} $|$ \emph{Kaggle, Jul 2023}
+    \end{itemize}
+    }
+\resumeSubHeadingListEnd
+
+
+%-----------HACKATHONS-----------
+\section{Hackathons}
+\resumeSubHeadingListStart
+    \small{
+    \begin{itemize}[leftmargin=0.15in, label=\textbullet]
+        \item \textbf{Diversion 2k25} (Feb 2025) $|$ yourmind.space - AI-powered journaling assistant with 92\% sentiment analysis accuracy
+        \item \textbf{Smart India Hackathon 2k24} (Jan 2024) $|$ \emph{3rd Place among 250+ teams} $|$ Vistaar - ISRO satellite imagery interface with 75\% faster data retrieval
+        \item \textbf{Status Code 0} (May 2023) $|$ \emph{Streamlit Track Winner} $|$ QR Kids AI - Child safety QR code generator with 10,000+ generated codes
+        \item \textbf{KGEC HACKFEST} (Aug 2023) $|$ \emph{3rd Place among 85 teams} $|$ OCR system achieving 89\% character recognition accuracy
+    \end{itemize}
+    }
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {JIS College of Engineering}{Sep 2022 -- May 2026 (Expected)}
+      {Bachelor of Technology in Computer Science Engineering - 8.7/10 CGPA}{Kalyani, West Bengal}
+  \resumeSubHeadingListEnd
+
+\end{document}
