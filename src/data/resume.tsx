@@ -147,19 +147,7 @@ export const DATA = {
       end: "May 2025",
       description:
         "Working with satellite data processing and integration of Machine Learning models into the platform. Developed Flask APIs for model deployment and data processing pipeline for efficient handling of satellite imagery data. Contributed to the enhancement of data processing capabilities for satellite imagery analysis.",
-    },
-    {
-      company: "Viben",
-      href: "https://viben.in/", // Replace with actual URL if available
-      badges: [],
-      location: "Remote",
-      title: "AI & Backend Engineer",
-      logoUrl: "/viben.avif", // Make sure to add Viben logo to public folder
-      start: "May 2025",
-      end: "Present",
-      description:
-        "Developing AI-powered clothing classification and image segmentation models to drive fashion insights and automate tagging workflows. Deployed Flask-based APIs on AWS EC2 for scalable real-time inference. Built and maintained backend infrastructure for seamless integration of ML models into production pipelines.",
-    },
+    }
   ],
   volunteering: [
     {
