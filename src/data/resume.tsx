@@ -213,7 +213,7 @@ export const DATA = {
     {
       company: "HexaFalls",
       badges: [],
-      href: "https://hexafalls.com",
+      href: "https://hexafalls.tech",
       location: "Remote",
       title: "Hackathon Mentor",
       logoUrl: "/hexafalls-DVbWU-kb.png",
