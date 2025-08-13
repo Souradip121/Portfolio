@@ -19,7 +19,7 @@ export const DATA = {
   description:
     "Learning about Artificial Intelligence, loves to write blogs, build and explore stuffs",
   summary:
-    "Started my tech journey in the year of 2022, participated in my first ever hackathon, attended lots of seminars along the way, jump back to today, I have participated over 5+ hackathons, won Smart India Hackathon and is doing internship at ISRO. I have built a community [devdotcom.in](devdotcom.in), running free DSA classes at 11pm, hosting podcasts, mentoring learners and learning along the way!",
+    "Started my tech journey in the year of 2022, participated in my first ever hackathon, attended lots of seminars along the way, jump back to today, I have participated over 5+ hackathons, won Smart India Hackathon and had done internship at ISRO. I have built a community [devdotcom.in](devdotcom.in), ran free DSA classes at 11pm, hosted podcasts, mentored learners and learned along the way!",
   avatarUrl: "/me.png",
   skills: [
     "Python",
@@ -141,13 +141,37 @@ export const DATA = {
       href: "https://www.sac.gov.in/",
       badges: [],
       location: "Ahmedabad, India",
-      title: "Research Intern",
+      title: "AI Research Intern (On-Site)",
       logoUrl: "/isro.png", // Make sure to add ISRO logo to public folder
       start: "Feb 2025",
       end: "May 2025",
       description:
         "Working with satellite data processing and integration of Machine Learning models into the platform. Developed Flask APIs for model deployment and data processing pipeline for efficient handling of satellite imagery data. Contributed to the enhancement of data processing capabilities for satellite imagery analysis.",
-    }
+    },
+    {
+      company: "The CloudOps Community",
+      href: "https://thecloudopscommunity.org/",
+      badges: [],
+      location: "Remote",
+      title: "DevRel & AI Engineer (Remote, Canada)",
+      logoUrl: "/thecloudopscomm_logo.jpeg",
+      start: "July 2025",
+      end: "Present",
+      description:
+        "Focusing on developer relations and AI initiatives within the community, creating AI Projects, and creating educational content.",
+    },
+    {
+      company: "Voltesure",
+      href: "https://voltesure.com/",
+      badges: [],
+      location: "Remote",
+      title: "AI Engineer (Remote, Israel)",
+      logoUrl: "/voltesure_logo.jpeg",
+      start: "Aug 2025",
+      end: "Present",
+      description:
+        "Working on creating AI Agents & Using Supabase for backend services.",
+    },
   ],
   volunteering: [
     {
@@ -167,12 +191,12 @@ export const DATA = {
       badges: [],
       href: "https://hackquest.io",
       location: "Remote",
-      title: "Advocate & Mentor",
+      title: "Advocate & AI Mentor",
       logoUrl: "/hack_quest1708933084951.png",
       start: "Jan 2025",
-      end: "Present",
+      end: "March 2025",
       description:
-        "Mentoring students in hackathons, conducting technical workshops, and helping them build innovative projects.",
+        "Mentoring students in technical workshops related to Decentralised AI, and helping them build innovative projects.",
     },
     {
       company: "Microsoft Learn",
@@ -186,6 +210,18 @@ export const DATA = {
       description:
         "Conducting workshops on Microsoft Azure, helping students learn cloud computing, and organizing technical events.",
     },
+    {
+      company: "HexaFalls",
+      badges: [],
+      href: "https://hexafalls.com",
+      location: "Remote",
+      title: "Hackathon Mentor",
+      logoUrl: "/hexafalls-DVbWU-kb.png",
+      start: "Jun 28",
+      end: "29 2025",
+      description:
+        "Mentoring participants in hackathons, providing guidance on project development, and sharing best practices for building successful applications.",
+    }
   ],
   education: [
     {
