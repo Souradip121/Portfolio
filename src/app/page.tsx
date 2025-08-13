@@ -262,7 +262,7 @@ export default function Page() {
                   the country would come together and build incredible things in
                   2-3 days. It was eye-opening to see the endless possibilities
                   brought to life by a group of motivated and passionate
-                  individuals.
+                  individuals.<b> 4x Hackathon Wins.</b>
                 </p>
               </div>
             </div>

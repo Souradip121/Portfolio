@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { title } from "process";
 
 export const DATA = {
   name: "Souradip Pal",
@@ -221,7 +222,7 @@ export const DATA = {
       end: "29 2025",
       description:
         "Mentoring participants in hackathons, providing guidance on project development, and sharing best practices for building successful applications.",
-    }
+    },
   ],
   education: [
     {
@@ -416,6 +417,14 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "Hack4Bengal 4.0",
+      dates: "June 2025",
+      location: "In-person (Winner)",
+      image: "/h4b.jpeg",
+      description:
+        "Developed a Weather AI Agent for meteorologists to efficiently analyze weather patterns with graphical representations. Won the Gemini AI track.",
+    },
+    {
       title: "Diversion 2k25",
       dates: "February 2025",
       location: "In-person",
@@ -427,11 +436,20 @@ export const DATA = {
     {
       title: "Smart India Hackathon 2k24",
       dates: "January 2024",
-      location: "In-person",
+      location: "In-person (Winner)",
       description:
         "Developed Vistaar - an interface where scientists can manipulate and visualize INSAT satellite imagery data. Secured third place in the competition.",
       image: "/smartindiahackathon.webp",
       win: "3rd Place",
+      links: [],
+    },
+    {
+      title: "Hack4Bengal 3.0",
+      dates: "June 2024",
+      location: "In-person (Winner)",
+      description:
+        "Developed Dashabhuja that uses AI to help women find employment opportunities. Won the DevPod Track. Also was selected for Round 2.",
+      image: "/h4b.jpeg",
       links: [],
     },
     {
@@ -465,7 +483,7 @@ export const DATA = {
     {
       title: "KGEC HACKFEST",
       dates: "2023",
-      location: "Remote",
+      location: "Remote (Winner)",
       description:
         "Developed an OCR-based optical character recognition system. Secured third place in the competition.",
       image: "/kgechackfest.jpg",
