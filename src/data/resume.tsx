@@ -150,6 +150,18 @@ export const DATA = {
         "Working with satellite data processing and integration of Machine Learning models into the platform. Developed Flask APIs for model deployment and data processing pipeline for efficient handling of satellite imagery data. Contributed to the enhancement of data processing capabilities for satellite imagery analysis.",
     },
     {
+      company: "Voltesure",
+      href: "https://voltesure.com/",
+      badges: [],
+      location: "Remote",
+      title: "AI Engineer (Remote, Israel)",
+      logoUrl: "/voltesure_logo.jpeg",
+      start: "Aug 2025",
+      end: "Oct 2025",
+      description:
+        "Working on creating AI Agents & Using Supabase for backend services.",
+    },
+    {
       company: "The CloudOps Community",
       href: "https://thecloudopscommunity.org/",
       badges: [],
@@ -162,16 +174,16 @@ export const DATA = {
         "Focusing on developer relations and AI initiatives within the community, creating AI Projects, and creating educational content.",
     },
     {
-      company: "Voltesure",
-      href: "https://voltesure.com/",
+      company: "CannerAI",
+      href: "https://cannerai.com/",
       badges: [],
       location: "Remote",
-      title: "AI Engineer (Remote, Israel)",
-      logoUrl: "/voltesure_logo.jpeg",
-      start: "Aug 2025",
+      title: "AI Engineer (Remote, Canada)",
+      logoUrl: "/cannerai.webp",
+      start: "Nov 2025",
       end: "Present",
       description:
-        "Working on creating AI Agents & Using Supabase for backend services.",
+        "Working on creating Production Ready Backend services for the platform.",
     },
   ],
   volunteering: [
