@@ -435,6 +435,7 @@ export const DATA = {
       image: "/h4b.jpeg",
       description:
         "Developed a Weather AI Agent for meteorologists to efficiently analyze weather patterns with graphical representations. Won the Gemini AI track.",
+      links: [],
     },
     {
       title: "Diversion 2k25",
