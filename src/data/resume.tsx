@@ -133,7 +133,7 @@ export const DATA = {
       title: "LFX Mentee",
       logoUrl: "/hyphae-logo-color.svg", // Make sure to add LF Energy logo to public folder
       start: "Mar 2025",
-      end: "Present",
+      end: "May 2025",
       description:
         "Contributing to open-source development of Hyphae APIs, an LF Energy project focused on standardizing building automation systems. Implementing API endpoints and data models for energy management systems with focus on interoperability and scalability. Collaborating with global team of developers to create solutions for sustainability-focused energy optimization in smart buildings.",
     },
